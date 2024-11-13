@@ -1,0 +1,55 @@
+
+    /* Nền hồng pastel */
+    body {
+      background-color: #f7c7d2;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    /* Khung chữ chúc mừng */
+    .message-container {
+      font-size: 2rem;
+      color: #131112;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    /* Chữ nhỏ hơn dưới cùng */
+    .sub-message {
+      font-size: 1rem;
+      color: #2d2829;
+      margin-top: 15px;
+    }
+
+    /* Nút */
+    .btn {
+      padding: 15px 25px;
+      font-size: 1rem;
+      background-color: #ff8f8f;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff4d6d;
+    }
+
+    /* Khung lời chúc */
+    .wish-box {
+      margin-top: 30px;
+      padding: 30px;
+      background-color: #fce0e4;
+      border: 5px solid #ff4d6d;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 550px;
+    }
