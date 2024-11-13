@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="em.css">
+
+  <style>
+    /* Nền hồng pastel */
+    body {
+      background-color: #f7c7d2;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    /* Khung chữ chúc mừng */
+    .message-container {
+      font-size: 2rem;
+      color: #131112;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    /* Chữ nhỏ hơn dưới cùng */
+    .sub-message {
+      font-size: 1rem;
+      color: #2d2829;
+      margin-top: 15px;
+    }
+
+    /* Nút */
+    .btn {
+      padding: 15px 25px;
+      font-size: 1rem;
+      background-color: #ff8f8f;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff4d6d;
+    }
+
+    /* Khung lời chúc */
+    .wish-box {
+      margin-top: 30px;
+      padding: 30px;
+      background-color: #fce0e4;
+      border: 5px solid #ff4d6d;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 550px;
+    }
+  </style>
+</head>
+<body>
+    
+  <script src="bé.js"></script>
+
+  <!-- Chữ mừng sinh nhật -->
+  <div class="message-container">
+    <p id="text" class="fade-in">Em bé ngoan xinh iu của anh ơiii</p>
+  </div>
+
+  <!-- Nút ấn để thay đổi -->
+  <button class="btn" onclick="changeMessage()">Tiếp nèee</button>
+  
+
+  <!-- Khung lời chúc sẽ xuất hiện sau khi nhấn nút -->
+  <div id="wishBox" class="wish-box" style="display: none;">
+  <div class="message-container" id="newMessage">Chúc mừng em bé của anh đã sang tuổi mới!</div>
+  <div class="sub-message">Mong rằng mọi ước mơ của bạn sẽ thành hiện thực.</div>
+  <div class="emoji-container">
+    <div class="emoji squirrel">🐿</div>
+    <div class="emoji heart">❤️</div>
+    <div class="emoji bunny">🐇</div>
+  </div>
+
+  <script>
+    function changeMessage() {
+      // Ẩn các phần tử cũ
+      document.querySelector('.message-container').style.display = 'none';
+      document.querySelector('.btn').style.display = 'none';
+      
+      // Hiển thị lời chúc mới
+      const wishBox = document.getElementById('wishBox');
+      wishBox.style.display = 'block';
+    }
+    
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* Định dạng chung */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .text-container {
+    text-align: center;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-out {
+    opacity: 1;
+    animation: fadeOut 2s forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* Định dạng cơ bản cho body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #f0f0f0;
+    font-size: 2rem; /* Kích thước của các emoji */
+}
+
+/* Đặt các emoji vào container */
+.emoji-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Khoảng cách giữa các emoji */
+    flex-direction: row;
+
+}
+
+/* Định dạng riêng cho từng emoji */
+.emoji {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hiệu ứng khi di chuột vào emoji */
+.emoji:hover {
+    transform: scale(1.2); /* Tăng kích thước khi hover */
+}
+
+/* Cải thiện hiệu ứng động */
+.squirrel {
+    color: #9d5a29; /* Màu nâu cho con sóc */
+}
+
+.heart {
+    color: red; /* Màu đỏ cho trái tim */
+}
+
+.bunny {
+    color: #FFFFFF; /* Màu trắng cho con thỏ */
+    text-shadow: 0 0 5px #000; /* Thêm bóng đen cho thỏ */
+}
