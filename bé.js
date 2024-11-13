@@ -18,3 +18,13 @@ function changeText() {
 
 // Thực hiện thay đổi chữ sau mỗi 5 giây
 setInterval(changeText, 5000);
+
+function changeMessage() {
+  // Ẩn các phần tử cũ
+  document.querySelector('.message-container').style.display = 'none';
+  document.querySelector('.btn').style.display = 'none';
+  
+  // Hiển thị lời chúc mới
+  const wishBox = document.getElementById('wishBox');
+  wishBox.style.display = 'block';
+}
