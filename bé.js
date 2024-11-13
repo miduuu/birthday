@@ -1,6 +1,6 @@
 // Đổi chữ sau mỗi 5 giây với hiệu ứng fade-out và fade-in
 const textElement = document.getElementById('text');
-const texts = ['Chữ ban đầu...', 'Chữ mới 1...', 'Chữ mới 2...'];
+const texts = ['Em bé ngoan xinh iu của anh ơiii', 'Em bé biết gì hăm', '❤️Anh yêuu emmm❤️'];
 let currentIndex = 0;
 
 function changeText() {
