@@ -17,7 +17,7 @@ function changeText() {
 }
 
 // Thực hiện thay đổi chữ sau mỗi 5 giây
-setInterval(changeText, 5000);
+setInterval(changeText, 3000);
 
 function changeMessage() {
   // Ẩn các phần tử cũ
