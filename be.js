@@ -17,7 +17,7 @@ function changeText() {
 }
 
 // Thực hiện thay đổi chữ sau mỗi 5 giây
-setInterval(changeText, 3000);
+setInterval(changeText, 5000);
 
 function changeMessage() {
   // Ẩn các phần tử cũ
@@ -28,3 +28,23 @@ function changeMessage() {
   const wishBox = document.getElementById('wishBox');
   wishBox.style.display = 'block';
 }
+
+function createHeart() {
+  const heart = document.createElement('div');
+  heart.classList.add('heart');
+  heart.innerHTML = '❤️';  // Emoji trái tim
+
+  // Đặt vị trí ngẫu nhiên cho trái tim
+  heart.style.left = `${Math.random() * 100}vw`;
+
+  // Thêm trái tim vào body
+  document.body.appendChild(heart);
+
+  // Sau khi animation hoàn tất, xóa phần tử khỏi DOM
+  heart.addEventListener('animationiteration', () => {
+    heart.remove();
+  });
+}
+
+// Tạo emoji trái tim rơi ngẫu nhiên mỗi giây
+setInterval(createHeart, 1200);
