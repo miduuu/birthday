@@ -1,0 +1,46 @@
+
+.pic {
+    display: flex;
+    align-items: center; /* Căn giữa ảnh theo chiều dọc */
+    }
+.pic img {
+    margin-right: 25px; /* Khoảng cách bên phải ảnh */
+    }
+
+
+.pic {
+        width: 100%;
+        overflow: hidden; /* Ẩn phần ảnh ra ngoài khung */
+    }
+
+    /* Ảnh lướt qua */
+    .roll {
+        width: 17%; /* Chiều rộng của ảnh gấp đôi khung để tạo hiệu ứng lướt */
+        animation: scroll-left 15s linear infinite, disappear 5s linear forwards; /* Chạy animation */
+    }
+
+    /* Định nghĩa animation cho việc lướt qua */
+   
+        @keyframes disappear {
+            0% {
+              transform: translateX(900%); /* Bắt đầu từ vị trí ban đầu */
+             }
+            }
+    
+
+    .wish-box {
+        margin-top: 30px;
+        padding: 35px;
+        background-color: #fce0e4;
+        border: 5px solid #ff4d6d;
+        border-radius: 15px;
+        width: 90%;
+        max-width: 550
+    
+      }
+.roll {
+        font-size: 1rem;
+        color: #131112;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }

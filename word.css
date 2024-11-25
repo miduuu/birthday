@@ -1,0 +1,8 @@
+.woo {
+    width: 17%; /* Chiều rộng của ảnh gấp đôi khung để tạo hiệu ứng lướt */
+    animation: scroll-left 15s linear infinite, disappear 5s linear forwards; /* Chạy animation */
+    font-size: 1rem;
+    color: #131112;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
